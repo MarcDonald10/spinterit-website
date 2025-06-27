@@ -14,7 +14,7 @@ import {
   Target,
   BadgeCheck
 } from 'lucide-react';
-import imgAppWeb from '../assets/projet/web/app/ugoeat/capture.png';
+import imgAppWeb from '../assets/projet/web/website1.png';
 import imgAppMobile from '../assets/projet/web/website/kinaru/capture.png';
 import imgDesign from '../assets/projet/ui/k1.png';
 
@@ -49,10 +49,10 @@ const Home = () => {
   const featuredProjects = [
     {
       id: 1,
-      title: 'UGOEAT',
+      title: 'DANYLPRO',
       category: 'Web Development',
       image: imgAppWeb,
-      description: 'Plateforme de reservation et livraison de repas en ligne',
+      description: 'Site web de l\'application Danylpro de prestation de services a domicile',
     },
     {
       id: 2,

@@ -12,21 +12,23 @@ const Pricing = () => {
       packages: [
         {
           name: 'Basic',
-          price: '2 500€',
+          price: '1 050€',
           description: 'Site vitrine professionnel',
           features: [
             'Design responsive moderne',
-            'Jusqu\'à 5 pages optimisées',
+            'Jusqu\'à 7 pages optimisées',
             'Formulaire de contact intégré',
+            'Hébergement 1 an inclus',
+            'Nom de domaine 1 an inclus',
+            'Un 03 e-mail professionnel',
             'Optimisation SEO de base',
             'Support technique 3 mois',
-            'Formation à la gestion',
           ],
           popular: false,
         },
         {
           name: 'Premium',
-          price: '5 500€',
+          price: '2 550€',
           description: 'Site web avancé avec fonctionnalités',
           features: [
             'Design sur mesure unique',
@@ -36,7 +38,8 @@ const Pricing = () => {
             'Analytics et reporting',
             'Support technique 6 mois',
             'Maintenance incluse',
-            'Formation approfondie',
+            'Hébergement 1 an inclus',
+            'Nom de domaine 1 an inclus',
           ],
           popular: true,
         },
@@ -65,7 +68,7 @@ const Pricing = () => {
       packages: [
         {
           name: 'Basic',
-          price: '8 000€',
+          price: '5 200€',
           description: 'Application mobile simple',
           features: [
             'Une plateforme (iOS ou Android)',
@@ -73,23 +76,30 @@ const Pricing = () => {
             'Fonctionnalités de base',
             'Publication sur store',
             'Support technique 3 mois',
-            'Documentation complète',
+            'Site vitrine de l\'app',
+            'Systeme d\'administration',
+            'Hebergement 1 an inclus',
+            'Nom de domaine 1 an inclus',
           ],
           popular: false,
         },
         {
           name: 'Premium',
-          price: '15 000€',
+          price: '13 000€',
           description: 'App complète multi-plateforme',
           features: [
             'iOS et Android natifs',
             'Design sur mesure premium',
             'Fonctionnalités avancées',
             'Notifications push',
+            'Publication sur stores',
             'Analytics intégrés',
             'Support technique 6 mois',
             'Mises à jour incluses',
-            'Formation utilisateur',
+            'Site vitrine de l\'app',
+            'Systeme d\'administration',
+            'Hébergement 1 an inclus',
+            'Nom de domaine 1 an inclus',
           ],
           popular: true,
         },
@@ -118,10 +128,10 @@ const Pricing = () => {
       packages: [
         {
           name: 'Basic',
-          price: '3 000€',
+          price: '1 500€',
           description: 'Design interface simple',
           features: [
-            'Jusqu\'à 10 écrans designés',
+            'Jusqu\'à 15 écrans designés',
             'Wireframes détaillés',
             'Design mobile et desktop',
             'Prototype cliquable',
@@ -132,10 +142,10 @@ const Pricing = () => {
         },
         {
           name: 'Premium',
-          price: '6 500€',
+          price: '4 500€',
           description: 'UX/UI complet avec recherche',
           features: [
-            'Jusqu\'à 25 écrans designés',
+            'Jusqu\'à 30 écrans designés',
             'Recherche utilisateur approfondie',
             'Design system complet',
             'Prototype avancé interactif',
@@ -169,22 +179,22 @@ const Pricing = () => {
   const additionalServices = [
     {
       title: 'Maintenance & Support',
-      price: 'À partir de 200€/mois',
+      price: 'À partir de 100€/mois',
       description: 'Support technique continu et mises à jour régulières',
     },
     {
       title: 'Consulting IT',
-      price: '150€/heure',
+      price: '25€/heure',
       description: 'Conseil stratégique et audit technique personnalisé',
     },
     {
       title: 'Formation Équipe',
-      price: '800€/jour',
+      price: '300€/jour',
       description: 'Formation sur mesure pour vos équipes techniques',
     },
     {
       title: 'Audit Sécurité',
-      price: 'À partir de 2 000€',
+      price: 'À partir de 500€',
       description: 'Audit complet de sécurité et recommandations',
     },
   ];
@@ -372,7 +382,7 @@ const Pricing = () => {
             {[
               {
                 question: 'Les prix incluent-ils la TVA ?',
-                answer: 'Tous nos prix sont affichés hors taxes. La TVA de 20% sera ajoutée sur la facture finale pour les clients français.',
+                answer: 'Tous nos prix sont affichés hors taxes. La TVA de 19,25% sera ajoutée sur la facture finale pour les clients Camerounais.',
               },
               {
                 question: 'Proposez-vous des facilités de paiement ?',

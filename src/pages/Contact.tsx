@@ -64,14 +64,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Téléphone',
-      content: '+33 1 23 45 67 89',
+      content: '+237 681 418 674',
       description: 'Lun-Ven 9h-18h',
     },
     {
       icon: MapPin,
       title: 'Adresse',
-      content: '123 Avenue des Champs-Élysées',
-      description: '75008 Paris, France',
+      content: 'DEIDO',
+      description: 'DOUALA, CAMEROUN',
     },
     {
       icon: Clock,
@@ -86,6 +86,8 @@ const Contact = () => {
     'Applications Mobiles',
     'Design UI/UX',
     'Solutions Cloud',
+    'Marketing Digital',
+    'Graphisme',
     'Consulting IT',
     'Maintenance & Support',
     'Autre',

@@ -138,10 +138,10 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/contact"
+                  to="/services"
                   className="group px-8 py-4 bg-red-500 text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-red-500 transition-all duration-300 border border-red-500 flex items-center space-x-2"
                 >
-                  <span>Demander un devis</span>
+                  <span>Voir nos services</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </motion.div>

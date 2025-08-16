@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { 
-  Code, 
-  Smartphone, 
-  Palette, 
-  Database, 
-  Cloud, 
+import {
+  Code,
+  Smartphone,
+  Palette,
+  Database,
+  Cloud,
   Shield,
   ArrowRight,
-  CheckCircle , BadgeCheck, PenTool
+  CheckCircle, BadgeCheck, PenTool
 } from 'lucide-react';
 import devwebImage from '../assets/services/devweb.jpg';
 import devmobileImage from '../assets/services/devmobile.jpg';
@@ -34,6 +34,7 @@ const Services = () => {
       ],
       technologies: ['React', 'Next.js', 'Node.js', 'TypeScript', 'Tailwind CSS'],
       color: 'from-red-500 to-red-600',
+      redirection:"https://forms.cloud.microsoft/r/bHnDnzGCGq?origin=lprLink",
     },
     {
       id: 'mobile',
@@ -49,6 +50,7 @@ const Services = () => {
       ],
       technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin'],
       color: 'from-red-600 to-red-700',
+      redirection:"https://forms.cloud.microsoft/r/SXb01knXQ6?origin=lprLink",
     },
     {
       id: 'uiux',
@@ -64,6 +66,7 @@ const Services = () => {
       ],
       technologies: ['Figma', 'Adobe XD'],
       color: 'from-red-400 to-red-500',
+      redirection:"https://forms.cloud.microsoft/r/Z3j56z9F9A?origin=lprLink",
     },
     {
       id: 'cloud',
@@ -79,6 +82,7 @@ const Services = () => {
       ],
       technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes'],
       color: 'from-red-700 to-red-800',
+      redirection:"https://forms.cloud.microsoft/r/Tk4c3KvSpa?origin=lprLink",
     },
     {
       id: 'marketing',
@@ -94,6 +98,7 @@ const Services = () => {
       ],
       technologies: [],
       color: 'from-red-800 to-red-900',
+      redirection:"https://forms.office.com/r/9zwHv51VWN",
     },
     {
       id: 'graphisme',
@@ -108,6 +113,7 @@ const Services = () => {
       ],
       technologies: ['Adobe Photoshop', ' Illustrator', 'After Effects'],
       color: 'from-gray-700 to-gray-800',
+      redirection:"https://forms.cloud.microsoft/r/F8YwgWdEqk?origin=lprLink",
     },
   ];
 
@@ -126,7 +132,7 @@ const Services = () => {
               Nos <span className="text-red-500">Services</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Des solutions technologiques complètes pour transformer votre vision 
+              Des solutions technologiques complètes pour transformer votre vision
               en réalité digitale performante et innovante.
             </p>
           </motion.div>
@@ -193,14 +199,28 @@ const Services = () => {
                     </div>
                   </div>
 
-                  {/* CTA */}
-                  <Link
-                    to={`/services/${service.id}`}
-                    className="inline-flex items-center space-x-2 text-red-500 font-semibold hover:text-red-600 transition-colors duration-300 group/link"
-                  >
-                    <span>En savoir plus</span>
-                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" />
-                  </Link>
+                  <div className="flex flex-wrap gap-10">
+                    {/* CTA */}
+                    <Link
+                      to={`/services/${service.id}`}
+                      className="inline-flex items-center space-x-2 text-red-500 font-semibold hover:text-red-600 transition-colors duration-300 group/link"
+                    >
+                      <span>En savoir plus</span>
+                      <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-300" />
+                    </Link>
+                    <Link
+                      to={service.redirection}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center px-6 py-3 bg-red-500 text-white rounded-lg font-medium hover:bg-white hover:text-red-500 transition-all duration-300 border border-red-500"
+
+                    >
+                      Demander un devis
+                    </Link>
+                  </div>
+
+
+
                 </div>
               </motion.div>
             ))}
@@ -279,7 +299,7 @@ const Services = () => {
               Prêt à commencer votre projet ?
             </h2>
             <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-              Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé 
+              Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé
               adapté à votre projet.
             </p>
             <motion.div

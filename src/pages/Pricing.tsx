@@ -438,7 +438,7 @@ const Pricing = () => {
               whileHover={{ scale: 1.02 }}
             >
               <Link
-                to="/contact"
+                to="/services"
                 className="px-8 py-4 bg-white text-red-500 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 flex items-center space-x-2"
               >
                 <span>Demander un devis gratuit</span>

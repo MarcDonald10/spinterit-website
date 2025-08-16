@@ -93,6 +93,7 @@ const ServiceDetail = () => {
           description: 'Application de mise en relation pour clients et prestataires',
         },
       ],
+      redirection:"https://forms.cloud.microsoft/r/bHnDnzGCGq?origin=lprLink",
     },
     mobile: {
       title: 'Applications Mobiles',
@@ -168,6 +169,7 @@ const ServiceDetail = () => {
           description: 'Application de mise en relation pour clients et prestataires',
         },
       ],
+      redirection:"https://forms.cloud.microsoft/r/SXb01knXQ6?origin=lprLink",
     },
     uiux: {
       title: 'Design UI/UX',
@@ -234,6 +236,7 @@ const ServiceDetail = () => {
           description: 'Design d\'application de mise en relation pour clients et prestataires',
         },
       ],
+      redirection:"https://forms.cloud.microsoft/r/Z3j56z9F9A?origin=lprLink",
     },
     graphisme: {
       title: 'Graphisme et Branding',
@@ -301,6 +304,8 @@ const ServiceDetail = () => {
           description: 'Logo d\'un café moderne et accueillant',
         },
       ],
+      redirection:"https://forms.cloud.microsoft/r/F8YwgWdEqk?origin=lprLink",
+
     },
     marketing: {
       title: 'Marketing digital',
@@ -359,6 +364,7 @@ const ServiceDetail = () => {
       ],
       projects: [
       ],
+      redirection:"https://forms.office.com/r/9zwHv51VWN",
     },
     cloud: {
       title: 'Solutions Cloud',
@@ -413,6 +419,7 @@ const ServiceDetail = () => {
         },
       ],
       projects: [],
+      redirection:"https://forms.cloud.microsoft/r/Tk4c3KvSpa?origin=lprLink",
     },
   };
 
@@ -462,7 +469,8 @@ const ServiceDetail = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <a
-                    href="#contact-form"
+                    href={service.redirection}
+                    target="_blank"
                     className="inline-flex items-center space-x-2 px-8 py-4 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 transition-all duration-300"
                   >
                     <span>Demander un devis</span>
@@ -634,7 +642,7 @@ const ServiceDetail = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Contact Form Section 
       <section id="contact-form" className="py-20 bg-gradient-to-br from-black to-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -819,7 +827,7 @@ const ServiceDetail = () => {
             </motion.button>
           </motion.form>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 };

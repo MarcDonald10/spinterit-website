@@ -74,7 +74,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* CTA Button 
           <motion.div
             className="hidden md:block"
             whileHover={{ scale: 1.05 }}
@@ -86,7 +86,7 @@ const Header = () => {
             >
               Demander un devis
             </Link>
-          </motion.div>
+          </motion.div>*/}
 
           {/* Mobile Menu Button */}
           <button

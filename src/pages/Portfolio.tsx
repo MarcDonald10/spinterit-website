@@ -70,11 +70,11 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'UGOEAT',
+      title: 'AFRO BASTILLE',
       category: 'web',
       categoryName: 'Développement Web',
       image: projetWeb1,
-      description: 'Plateforme de reservation et livraison de repas en ligne.',
+      description: 'Site vitrine pour un restaurant',
       technologies: ['Next.js', 'Nodejs', 'Tailwind', 'Stripe'],
       year: '2025',
       client: 'RestaurantTech',
